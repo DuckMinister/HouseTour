@@ -1,6 +1,7 @@
 # HouseTour
 
-
+## Code Structre:
+- html file and the corresponding json file must share the exact same name, otherwise the loader will not find the corresponding house data.
 
 ## Things that need to be done:
 - [Landing Page](index.html). Dont make it complicated. Just a basic list made nice with CSS. Maybe list the sources (where did you download the modles, etc)

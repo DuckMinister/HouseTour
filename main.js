@@ -15,7 +15,10 @@ let viewMode = Mode.PANORAMA;
 
 let currentActiveRoom = { value: 0 } // the id of the currently selected room;
 
-const roomList = await loadRoomData(currentActiveRoom);
+let fileName = (window.location.pathname.substring(window.location.pathname.lastIndexOf('/') + 1) || 'index.html');
+fileName = fileName.slice(0, fileName.length-5)
+
+const roomList = await loadRoomData(fileName + ".json", currentActiveRoom);
 
 
 let mapContainer = document.getElementById("map-container")
@@ -147,7 +150,6 @@ function playerMapLook(){
 
 function loadingCircle(loadingProgress){
     let loadingParagraph = document.querySelector('#loading-screen > p');
-    console.log(loadingParagraph);
     loadingParagraph.textContent = "Loading: " + Math.round(loadingProgress) + " %";
 
 }
@@ -160,7 +162,7 @@ function animate() {
     renderer.render(scene, camera);
 }
 
-createModel("HouseModel.glb")
+createModel(roomList[currentActiveRoom.value].modelPath)
 
 window.addEventListener('resize', onWindowResize, false);
 window.addEventListener("keypress", onKeyPressed)

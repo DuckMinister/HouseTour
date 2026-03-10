@@ -8,21 +8,21 @@ export class Room {
         this.centerY = centerY;
         this.height = height;
         this.width = width;
-        this.texture = texture;
+        this.model = texture;
         this.divId = divId;
         this.tpPosition = tpPosition;
     }
 
-    get picturePath(){
-        return this.texture;
+    get modelPath(){
+        return this.model;
     }
 
 
 }
 
-export async function loadRoomData(currentActiveRoomObj) {
+export async function loadRoomData(roomDataPath, currentActiveRoomObj) {
     try {
-        const response = await fetch('roomData.json');
+        const response = await fetch(roomDataPath);
         const data = await response.json();
         
         // Pass the specific part of the data to your function
@@ -52,10 +52,10 @@ function initRooms(roomData, currentActiveRoomObj){
         
         roomDiv.addEventListener("click", (e)=>{
             let roomId = e.srcElement.id;
-            console.log("Teleport to room id " + roomId);
+            // console.log("Teleport to room id " + roomId);
             currentActiveRoomObj.value = roomId;
 
-            console.log(roomList[roomId])
+            // console.log(roomList[roomId])
             
 
             let tpPos = roomList[roomId].tpPosition;
@@ -64,7 +64,7 @@ function initRooms(roomData, currentActiveRoomObj){
         })
 
 
-        console.log(room.model);
+        // console.log(room.model);
 
         document.getElementById("map-container").appendChild(roomDiv);
         // document.body.appendChild(roomDiv);
