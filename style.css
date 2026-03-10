@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto";
+    background-color: #f9f9f9
+}
+
+p{
+    line-height: 25px;
+    font-size: 19px;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: normal;
+}
+
+h6{
+
+}
+
+
+.site-navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background: #f9f9f9;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 25px;
+    text-align: left;
+}
+
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+
+
+
+
+/*Navbar*/
+
+.site-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.site-menu li {
+    margin-left: 20px;
+}
+
+.site-logo a,
+.site-menu a{
+    display: block;
+    text-decoration: none;
+    
+    color: #032955;
+    text-align: center;
+    padding: 14px 16px;
+
+    font-size: 20px;
+    transition: 0.3s all ease;
+}
+
+.site-logo a:hover,
+.site-menu a:hover{
+    scale: 1.05;
+    border-bottom: 2px solid #032955;
+    transition: 0.3s all ease;
+    color: rgb(0, 0, 0);
+}
+
+
+
+
+
+/*Hero / Title page*/
+
+
+.hero-section {
+  /* 1. Make it full screen */
+  height: 100vh;
+  width: 100%;
+  
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/image.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+  
+  display: flex;
+  align-items: center; 
+}
+
+.hero-content {
+  max-width: 500px;
+  color: white;
+}
+
+.hero-content a{
+    text-decoration: none;
+    
+    color: #032955;
+    border-radius: 10px;
+    background-color: #ffffff;
+    margin-top: 0px;
+    padding: 12px 15px;
+
+    transition: 0.3s all ease;
+}
+
+
+
+
+
+
+/*Sections*/
+
+section{
+    margin-top: 50px;
+    padding: 40px;
+}
+
+
+
+.title-container{
+    padding: 30px 30px 80px 0px;
+}
+
+.paragraphDiv{
+    padding-bottom: 40px;
+}
