@@ -1,20 +1,20 @@
 [
     {
         "url": "house1.html",
-        "imageURL": "image.png",
+        "imageURL": "data/image.png",
         "name": "House 1",
         "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime sint aut voluptas aliquid, consectetur quae fugiat et esse, distinctio inventore ex rem, mollitia veniam labore voluptatem voluptatibus amet!"
     },
 
     {
         "url": "house1.html",
-        "imageURL": "image.png",
+        "imageURL": "data/image.png",
         "name": "House 1",
         "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime sint aut voluptas aliquid, consectetur quae fugiat et esse, distinctio inventore ex rem, mollitia veniam labore voluptatem voluptatibus amet!"
     },
     {
         "url": "house1.html",
-        "imageURL": "image.png",
+        "imageURL": "data/image.png",
         "name": "House 1",
         "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime sint aut voluptas aliquid, consectetur quae fugiat et esse, distinctio inventore ex rem, mollitia veniam labore voluptatem voluptatibus amet!"
     }

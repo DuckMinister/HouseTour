@@ -1,4 +1,4 @@
-fetch(`/allHouseData.json`)
+fetch(`/data/allHouseData.json`)
   .then(response => response.json())
   .then(data => {
 
